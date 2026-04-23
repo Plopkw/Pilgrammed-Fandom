@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pilgrammed Wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <a href="#" class="logo">Pilgrammed Wiki</a>
+        
+        <div class="nav-right">
+           <div class="search-container">
+    <input type="text" id="searchInput" class="search-bar" placeholder="Search Pilgrammed Wiki" onkeypress="handleKeyPress(event)">
+    <button onclick="performSearch('searchInput')">Search</button>
+</div>
+            
+            <div class="user-actions">
+                <button class="btn">Log in</button>
+                <button class="btn">Sign up</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-banner">
+    <div class="hero-container">
+        <img src="left-head.png" alt="" class="mascot-img">
+
+        <div class="hero-text-content">
+            <h2>Welcome to the Pilgrammed wiki!</h2>
+            <p>Here you can find everything you need to know about the RPG Pilgrammed.</p>
+            <p class="article-count">Featuring different articles in this wiki!</p>
+            
+    <div class="banner-search">
+             <input type="text" id="bannerSearchInput" placeholder="Search the wiki..." onkeypress="handleKeyPress(event)">
+             <button type="button" onclick="performSearch('bannerSearchInput')">Search</button>
+                 </div>
+
+        <img src="right-head.png" alt="" class="mascot-img">
+    </div>
+</section>
+        <section class="trailer-section">
+            <h2>Trailer</h2>
+            <div class="video-container">
+                <div class="iframe-wrapper">
+                    <iframe src="https://www.youtube.com/embed/ENdAdX0QgWc" title="Pilgrammed Gameplay Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <h2>Categories</h2>
+            
+            <div class="category-grid">
+                <a href="accessories.html" class="category-item">
+                    <div class="category-img">
+                        <img src="ChallengeMedal1.webp" alt="Accessories" class="cat-icon">
+                        </div>
+                    <span class="category-title">Accessories</span>
+                </a>
+
+                <a href="armor.html" class="category-item">
+                    <div class="category-img">
+                    <img src="armour.png" alt="Armor" class="cat-icon">
+                        </div>
+                    <span class="category-title">Armor</span>
+                </a>
+
+                <a href="bosses.html" class="category-item">
+                    <div class="category-img">
+                                            <img src="ThiefKing.webp" alt="Armor" class="cat-icon">
+
+                    </div>
+                    <span class="category-title">Bosses
+                    </span>
+                </a>
+
+                <a href="characters.html" class="category-item">
+                    <div class="category-img"></div>
+                    <span class="category-title">Characters</span>
+                </a>
+
+                <a href="enemies.html" class="category-item">
+                    <div class="category-img"></div>
+                    <span class="category-title">Enemies</span>
+                </a>
+
+                <a href="helmets.html" class="category-item">
+                    <div class="category-img"></div>
+                    <span class="category-title">Helmets</span>
+                </a>
+
+                <a href="locations.html" class="category-item">
+                    <div class="category-img"></div>
+                    <span class="category-title">Locations</span>
+                </a>
+                
+                <a href="materials.html" class="category-item">
+                    <div class="category-img"></div>
+                    <span class="category-title">Materials</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <!--<script>
+    function performSearch() {
+        let query = document.getElementById("searchInput").value.toLowerCase();
+
+        if (query.includes("ring") || query.includes("boot") || query.includes("amulet") || query.includes("accessory")) {
+            window.location.href = "accessories.html";
+            
+        } else if (query.includes("armor") || query.includes("chestplate") || query.includes("robe")) {
+            window.location.href = "armor.html";
+            
+        } else if (query.includes("helmet") || query.includes("hat") || query.includes("mask")) {
+            window.location.href = "helmets.html";
+            
+        } else if (query.includes("boss") || query.includes("king") || query.includes("thief")) {
+            window.location.href = "bosses.html";
+            
+        } else if (query !== "") {
+            alert("We couldn't find a category for that item!");
+        }
+    }
+
+    document.getElementById("searchInput").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            performSearch();
+        }
+    });  I TRIED TO MAKE A SEARCH FROM JAVASCRIPT BUT I FORGOT HOW TO AND COULDNT GET IT TO WORK SO I GAVE UP (AI COULDNT FIGURE IT OUT EITHER)-->
+</script>
+</body>
+</html>
